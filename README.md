@@ -13,3 +13,6 @@ Maven ---> Path -- C:\Program Files\Java\jdk1.8.0_211\bin  -- C:\apache-maven-3.
 Java ---> JAVA_HOME --- C:\Program Files\Java\jdk1.8
 Development Environment: 
 Java-->    IntelliJ IDEA Community:  https://www.jetbrains.com/idea/download/
+
+WIKI
+Readme from a template to do a good -> link: https://gist.github.com/Villanuevand/6386899f70346d4580c723232524d35a
