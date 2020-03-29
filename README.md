@@ -7,9 +7,9 @@ Windows 10 Operating System Instance Browser Installation: Chrome and / or Mozil
 https://jdk.java.net/java-se-ri/11 
 
 Environment variable configuration:
- Maven ---> Path -- C:\Program Files\Java\jdk1.8.0_211\bin  -- C:\apache-maven-3.6.1\bin 
+Maven ---> Path -- C:\Program Files\Java\jdk1.8.0_211\bin  -- C:\apache-maven-3.6.1\bin 
                      M2_HOME --- C:\apache-maven-3.6.1 
                    
-    Java ---> JAVA_HOME --- C:\Program Files\Java\jdk1.8
-    Entorno de Desarrollo:
-            Java-->    IntelliJ IDEA Community:  https://www.jetbrains.com/idea/download/
+Java ---> JAVA_HOME --- C:\Program Files\Java\jdk1.8
+Development Environment: 
+Java-->    IntelliJ IDEA Community:  https://www.jetbrains.com/idea/download/
