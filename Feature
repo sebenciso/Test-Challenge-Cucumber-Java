@@ -1,0 +1,11 @@
+Scenario I am a new user
+with password and password created
+I must click login
+
+Background: Enter authentication data
+And User: test@cafeto.co
+And password: 123456789
+
+Given I new registered user
+
+Then new user successfully logged in.
