@@ -38,7 +38,7 @@ public class PruebaTest {
 
 
         // Abrimos una URL
-        firefoxDriver.get("https://www.google.com.co");
+        firefoxDriver.get("hhttp://aws.amazon.com/en/");
 
         //Encontrar e interactuar con elementos
 
