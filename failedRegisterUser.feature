@@ -5,4 +5,4 @@ And Click @Continue -- He_leído_y_acepts_términos_y_condiciones (button)
 When informationContact -- Fill out required fields (*) y ()
 When informtionCash-- Fill out requerid fields (*) y ()
 And Click @VerificarAñadir(button) -- bot
-Then @Send(Button) diseabled -- Botón Enviar 
+Then @Send(Button) enabled -- Botón Enviar 
