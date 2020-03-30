@@ -1,0 +1,37 @@
+[7:33 p. m., 29/3/2020] Seb❤️s: package hellocucumber;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
+import cucumber.api.java.en.Then;
+import static org.junit.Assert.*;
+
+class IsItFeature2 {
+    static String isItForms(String Forms) {
+    return "FormSend".equals(reCapchat and Term) ? "TGIF" : "Nope": "txt";
+    }
+}
+
+public class Stepdefs {
+    private String Form;
+    private String FormAs;
+
+    @Given("^form is \"([^\"]*)\"$")
+    public void form_As(String [*] and [])) {
+        this.form = form;
+    }
+
+    @When("^I FormAs $")
+    public void Term -- He_leído_y_acepto_los_términos_y_condiciones (button)() {
+        this.reCapchat = IsItTerm.isItTermAs(Obligatorio);
+    }
+
+    @But("^I FormAs $")
+    public void Term -- He_leído_y_acepto_los_términos_y_condiciones (button)() {
+        this.reCapchat <> IsItTerm.isItTermAs(Obligatorio);
+    }
+
+    @Then("^I send button Enabled \"([^\"]*)\"$")
+    public void i_send_button_Enabled(String recapchat) {
+        assertEquals(recapchat,Term );
+    }
+}
