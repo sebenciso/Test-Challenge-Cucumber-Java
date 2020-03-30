@@ -19,4 +19,4 @@ mvn package
 
 WIKI
 Readme from a template to do a good -> link: https://gist.github.com/Villanuevand/6386899f70346d4580c723232524d35a
-https://dzone.com/articles/gradle-vs-maven
+Gradle vs. Maven -> link: https://dzone.com/articles/gradle-vs-maven
