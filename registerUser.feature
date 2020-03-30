@@ -3,5 +3,6 @@ Given  Form --Form registerUser
 When FormAs --fill out required fields  (*) y ()
 And Click @Continue -- He_leído_y_acepts_términos_y_condiciones (button)
 When informationContact -- Fill out required fields (*) y ()
-But not Click @reCapchat(button) -- bot
+When informtionCash-- Fill out requerid fields (*) y ()
+But not Click @VerificarAñadir(button) -- bot
 Then @Send(Button) diseabled -- Botón Enviar 
