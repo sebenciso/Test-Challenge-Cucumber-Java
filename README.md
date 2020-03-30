@@ -18,6 +18,10 @@ To run the Maven goal that creates the JAR file, you would execute the following
 
 mvn package
 
+Execute the following for a list of tasks that Gradle can run with the current configuration:
+
+gradle tasks --all
+
 WIKI
 Readme from a template to do a good -> link: https://gist.github.com/Villanuevand/6386899f70346d4580c723232524d35a
 Gradle vs. Maven -> link: https://dzone.com/articles/gradle-vs-maven
