@@ -1,6 +1,7 @@
-Feature No.1: Usuario puede contactar a http://aws.amazon.com/en/
-Given  Form --Formulario de Contacto
-When FormAs --Diligenciar campos obligatorios (*) y ()
-And Click @Term -- He_leído_y_acepto_los_términos_y_condiciones (button)
-But  not Click @reCapchat(button) -- bot
+Feature No.1: Usuario puede contactar a https://portal.aws.amazon.com/billing/signup?redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation&language=es_es#/start
+Given  Form --Form registerUser
+When FormAs --fill out required fields  (*) y ()
+And Click @Continue -- He_leído_y_acepts_términos_y_condiciones (button)
+When informationContact -- Fill out required fields (*) y ()
+But not Click @reCapchat(button) -- bot
 Then @Send(Button) diseabled -- Botón Enviar 
