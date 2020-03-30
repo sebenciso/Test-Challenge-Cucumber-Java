@@ -15,6 +15,7 @@ Development Environment:
 Java-->    IntelliJ IDEA Community:  https://www.jetbrains.com/idea/download/
 
 To run the Maven goal that creates the JAR file, you would execute the following:
+
 mvn package
 
 WIKI
