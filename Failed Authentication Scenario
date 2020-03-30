@@ -1,4 +1,4 @@
-[7:33 p. m., 29/3/2020] Seb❤️s: package hellocucumber;
+package hellocucumber;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
