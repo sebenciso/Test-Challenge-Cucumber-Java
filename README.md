@@ -14,5 +14,8 @@ Java ---> JAVA_HOME --- C:\Program Files\Java\jdk1.8
 Development Environment: 
 Java-->    IntelliJ IDEA Community:  https://www.jetbrains.com/idea/download/
 
+To run the Maven goal that creates the JAR file, you would execute the following:
+mvn package
+
 WIKI
 Readme from a template to do a good -> link: https://gist.github.com/Villanuevand/6386899f70346d4580c723232524d35a
