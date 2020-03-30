@@ -1,0 +1,29 @@
+import java.util.concurrent.TimeUnit;
+
+public class BaseTestSuite {
+    protected WebDriver firefoxDriver;
+
+    @Before
+    public void abrirDriver () {
+        //Encontrar archivo exe geckodriver
+        System.setProperty("webdriver.gecko.driver","src\\main\\resources\\geckodriver.exe");
+
+        //creamos opciones sobre nuestro driver
+        FirefoxOptions options = new FirefoxOptions ();
+        options.setCapability("marionette", false);
+
+
+        //Nueva instancia de FirefoxDriver
+        firefoxDriver = new FirefoxDriver(options);
+
+        // Definimos el tiempo de espera hasta que aceptamos un timeout
+        firefoxDriver.manage().timeouts().implicitlyWait( 10, TimeUnit.SECONDS);
+
+        @After
+
+        public void cerrarDriver() {
+            //Cerrar ventana, apagar driver
+            firefoxDriver.quit();
+
+    }
+}
