@@ -16,4 +16,7 @@ public static void setUser(String user){
  }
  public static String getPassword(){
   reurn password;
+ public static String setPassword(String password){
+   User.password= password;
+   }
  }
