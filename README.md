@@ -25,3 +25,5 @@ gradle tasks --all
 WIKI
 Readme from a template to do a good -> link: https://gist.github.com/Villanuevand/6386899f70346d4580c723232524d35a
 Gradle vs. Maven -> link: https://dzone.com/articles/gradle-vs-maven
+
+Crear carpeta respositorio -> link:https://victorhckinthefreeworld.com/2018/09/21/como-crear-una-carpeta-en-un-repositorio-git-desde-la-interfaz-web-de-github/
