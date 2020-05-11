@@ -78,4 +78,16 @@ WHERE nombre = ''---- Aqui se escribe el nombre de cada producto
 
 ----Obtener la última fecha de compra de un cliente y según su frecuencia de compra estimar
 
+CREATE TABLE dbo.Duration  
+    (startDate datetime2, endDate datetime2);  
+    
+INSERT INTO dbo.Duration(startDate, endDate)  
+    VALUES ('2000-02-01 00:00:00.000, '2000-05-25 00:00:00.000');  
+    
+SELECT DATEDIFF(day, startDate, endDate) AS 'Duration'  
+    FROM dbo.Duration;  
+-- Returns: 1
+
 ----en qué fecha podría volver a comprar
+
+SELECT MONTH(GETDATE()), Day(GetDate())
