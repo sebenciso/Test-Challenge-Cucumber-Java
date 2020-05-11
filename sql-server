@@ -1,0 +1,70 @@
+CREATE TABLE departamento (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE clientes1 (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nif VARCHAR(9) UNIQUE,
+    nombre VARCHAR(25) NOT NULL,
+    apellido1 VARCHAR(50) NOT NULL,
+    apellido2 VARCHAR(50),
+    ciudad VARCHAR(25) NOT NULL,
+    direccion VARCHAR(50) NOT NULL,
+    telefono VARCHAR(9),
+    fecha_nacimiento DATE NOT NULL,
+    sexo ENUM('H', 'M') NOT NULL,
+    tipo ENUM('profesor', 'alumno') NOT NULL
+);
+ 
+CREATE TABLE clientes2 (
+    id_clientes1 INT UNSIGNED PRIMARY KEY,
+    id_departamento INT UNSIGNED NOT NULL,
+    FOREIGN KEY (id_clientes1) REFERENCES clientes1(id),
+    FOREIGN KEY (id_departamento) REFERENCES departamento(id)
+);
+ 
+ CREATE TABLE precio (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL
+);
+ 
+CREATE TABLE producto2(
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    creditos FLOAT UNSIGNED NOT NULL,
+    tipo ENUM('básica', 'obligatoria', 'optativa') NOT NULL,
+    curso TINYINT UNSIGNED NOT NULL,
+    cuatrimestre TINYINT UNSIGNED NOT NULL,
+    id_clientes1 INT UNSIGNED,
+    id_precio INT UNSIGNED NOT NULL,
+    FOREIGN KEY(id_clientes1) REFERENCES clientes1(id_clientes1),
+    FOREIGN KEY(id_grado) REFERENCES precio(id)
+----Obtener la lista de precios de todos los productos
+    USE AdventureWorks2012;
+GO
+SELECT *
+FROM Production.Product
+ORDER BY Name ASC;
+-- Alternate way.
+USE AdventureWorks2012;
+GO
+SELECT p.*
+FROM Production.Product AS p
+ORDER BY Name ASC;
+GO 
+
+----Obtener la lista de productos cuya existencia en el inventario haya llegado al mínimo
+----permitido (5 unidades)
+ 
+SELECT top 5 MIN(column_name)
+FROM table_name
+WHERE condition;
+
+---- Obtener una lista de clientes no mayores de 35 años que hayan realizado compras entre el
+-----1 de febrero de 2000 y el 25 de mayo de 2000
+
+----Obtener el valor total vendido por cada producto en el año 2000
+----Obtener la última fecha de compra de un cliente y según su frecuencia de compra estimar
+
+----en qué fecha podría volver a comprar
