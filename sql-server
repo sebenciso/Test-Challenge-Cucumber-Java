@@ -40,7 +40,8 @@ CREATE TABLE producto2(
     id_precio INT UNSIGNED NOT NULL,
     FOREIGN KEY(id_clientes1) REFERENCES clientes1(id_clientes1),
     FOREIGN KEY(id_grado) REFERENCES precio(id)
-----Obtener la lista de precios de todos los productos
+
+Obtener la lista de precios de todos los productos
     USE AdventureWorks2012;
 GO
 SELECT *
@@ -54,17 +55,27 @@ FROM Production.Product AS p
 ORDER BY Name ASC;
 GO 
 
-----Obtener la lista de productos cuya existencia en el inventario haya llegado al mínimo
-----permitido (5 unidades)
- 
+//*Obtener la lista de productos cuya existencia en el inventario haya llegado al mínimo
+permitido (5 unidades)
+*//
+
 SELECT top 5 MIN(column_name)
 FROM table_name
 WHERE condition;
 
----- Obtener una lista de clientes no mayores de 35 años que hayan realizado compras entre el
------1 de febrero de 2000 y el 25 de mayo de 2000
+//* Obtener una lista de clientes no mayores de 35 años que hayan realizado compras entre el
+1 de febrero de 2000 y el 25 de mayo de 2000
+*//
+
+select *from Clientes where edad <= '35' fecha = '2000-02-01 00:00:00.000' or fecha = '2000-05-25 00:00:00.000'
+order by invoice desc
 
 ----Obtener el valor total vendido por cada producto en el año 2000
+
+select SUM AS total_vendido_producto
+FROM producto INNER JOIN vendido ON productos = pedidos.rep
+WHERE nombre = ''---- Aqui se escribe el nombre de cada producto
+
 ----Obtener la última fecha de compra de un cliente y según su frecuencia de compra estimar
 
 ----en qué fecha podría volver a comprar
